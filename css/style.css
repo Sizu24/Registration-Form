@@ -1,14 +1,70 @@
+/* tag elements */
+
 body {
 	margin: 0;
 }
 
 nav {
+	background: #2D3945;
+}
+hr {
+	height: 1px;
 	background: black;
+	margin-top: 3px;
 }
 
 header, footer {
 	text-align: center;
 }
+header {
+	border-bottom: 4px solid black;
+	margin: 2px;
+}
+p, h3{
+	color: gray;
+}
+h3 {
+	font-size: 1em;
+	font-weight: 200;
+}
+fieldset {
+	border: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li{
+	padding-bottom: 10px;
+}
+
+label {
+	color: gray;
+}
+
+footer {
+	margin-top: 25px;
+	font-style: italic;
+	color: gray;
+}
+
+
+/* class styles */
+.wrapper {
+	margin: 0 3%;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+.contact input:focus {
+	border-color: blue;
+}
+
+
+/* ID styles */
 
 #title {
 	text-align: center;
@@ -18,24 +74,14 @@ header, footer {
 	color: #fff;
 }
 
-header {
-	border-bottom: 5px solid black;
-	margin: 2px 3%;
+#zipcode {
+	width: 150px;
 }
 
-form {
-	border-top: 2px solid black;
+/* form {
 	margin: 0 3%;
-}
+} */
 
-.contact {
-	display: flex;
-	flex-direction: column;
-}
-
-fieldset {
-	border: none;
-}
 
 fieldset > label {
 	margin-bottom: 10px;
@@ -51,7 +97,7 @@ fieldset > label {
 input[type="submit"]{
 	padding: 20px;
 	width: 100%;
-	background: teal;
+	background: #4EBBB5;
 	border-radius: 5px;
 	color: white;
 	font-size: 1.3em;
@@ -72,21 +118,7 @@ input::placeholder {
 	color: rgb(214, 214, 214);
 }
 
-.contact input:focus {
-	border-color: blue;
-}
 
-#zip {
-	width: 150px;
-}
-
-label {
-	color: gray;
-}
-
-footer {
-	margin-top: 25px;
-}
 
 
 

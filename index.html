@@ -11,29 +11,30 @@
     <nav>
         <h1 id="title">The Code Review</h1>
     </nav>
+    <div class="wrapper">
+      <header>
+          <h2>Sign Up for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+      </header>
 
-    <header>
-        <h2>Sign Up for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-    </header>
-
-    <main>
-       
-        <form action="index.html" method="post">
-           <!-- Contact Section -->
+      <main>
+        
+          <form action="index.html" method="post">
+            <hr>
+            <!-- Contact Section -->
             <fieldset class="contact">
                 <legend><h2>Contact Information</h2></legend>
 
                 <label for="username">Full Name</label>
                 <input type="name" id="username" name="username" placeholder="Required">
 
-                <label for="email">Email</label>
+                <label for="email">Email Address</label>
                 <input type="email" id="email" name="user-email" placeholder="Required">
 
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="user-phone">
 
-                <label for="address">Address</label>
+                <label for="address">Street Address</label>
                 <input type="text" id="address" name="user-address">
 
                 <label for="city">City</label>
@@ -46,16 +47,16 @@
                     <option value="California">California</option>
                 </select>
 
-                <label for="zip">Zip Code</label>
+                <label for="zipcode">Zip Code</label>
                 <!-- fix this -->
                 <!-- fix this -->
                 <!-- fix this -->
                 <!-- fix this -->
                 <!-- fix this -->
-                <input type="text" id="zip" name="user-zip" pattern="[0-9*]">
+                <input type="text" id="zipcode" name="user-zip" pattern="[0-9*]">
 
             </fieldset>
-
+            <hr>
             <!-- Newsletter section -->
             <fieldset class="newsletter">
 
@@ -64,23 +65,37 @@
                 <p>Selecet the newsletters you would like to receive</p>
 
                 <!-- Checkboxes -->
-                <label for="html-news">HTML News</label>
-                <input type="checkbox" id="html-news" value="html" name="newsletters">
-
-                <label for="css-news">CSS News</label>
-                <input type="checkbox" id="css-news" value="css" name="newsletters">
-
-                <label for="javascript-news">Javascript News</label>
-                <input type="checkbox" id="javascript-news" value="javascript" name="newsletters">
+                <ul>
+                  <li>
+                    <input type="checkbox" id="html-news" value="html" name="newsletters">
+                    <label for="html-news">HTML News</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="css-news" value="css" name="newsletters">
+                    <label for="css-news">CSS News</label>
+                  </li>
+                    
+                  <li>
+                    <input type="checkbox" id="javascript-news" value="javascript" name="newsletters">
+                    <label for="javascript-news">Javascript News</label>
+                  </li>
+                </ul>
 
                 <h3>Newsletter format</h3>
 
                 <!-- Radio buttons -->
-                <label for="html-radio">HTML</label>
-                <input type="radio" id="html-radio" value="html" name="format">
+                <ul>
+                  <li>
+                    <input type="radio" id="html-radio" value="html" name="format">
+                    <label for="html-radio">HTML</label>
+                  </li>
 
-                <label for="plain-radio">Plain text</label>
-                <input type="radio" id="plain-radio" value="plain" name="format">
+                  <li>
+                    <input type="radio" id="plain-radio" value="plain" name="format"> 
+                    <label for="plain-radio">Plain text</label>
+                  </li>
+                </ul>
 
             </fieldset>
             <!-- Text Area -->
@@ -90,14 +105,14 @@
 
             <!-- Submit Button -->
             <input type="submit" value="Sign Up" id="submit" name="submit-button">
-          
-        </form>
-    </main>
+            
+          </form>
+      </main>
+    </div>
 
     <footer>
         <p>Copyright The Code Review</p>
     </footer>
-
 
 </body>
 </html>
