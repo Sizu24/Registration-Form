@@ -1,118 +1,118 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Form Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Form Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Title -->
-    <nav>
-        <h1 id="title">The Code Review</h1>
-    </nav>
-    <div class="wrapper">
-      <header>
-          <h2>Sign Up for our newsletter</h2>
-          <p>Get the latest news on how your code is doing right in your inbox</p>
-      </header>
+  <!-- Title -->
+  <nav>
+    <h1 id="title">The Code Review</h1>
+  </nav>
 
-      <main>
-        
-          <form action="index.html" method="post">
-            <hr>
-            <!-- Contact Section -->
-            <fieldset class="contact">
-                <legend><h2>Contact Information</h2></legend>
+  <div class="wrapper">
+    <header>
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
 
-                <label for="username">Full Name</label>
-                <input type="name" id="username" name="username" placeholder="Required">
+    <main>
+      <form action="index.html" method="post">
+        <hr>
+        <!-- Contact Section -->
+        <fieldset class="contact">
+          <legend><h2>Contact Information</h2></legend>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="user-email" placeholder="Required">
+          <label for="username">Full Name</label>
+          <input type="name" id="username" name="username" placeholder="Required">
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user-phone">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="user-email" placeholder="Required">
 
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user-address">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user-phone">
 
-                <label for="city">City</label>
-                <input type="text" id="city" name="user-city">
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="user-address">
 
-                <!-- Dropdown selection -->
-                <label for="state">State</label>
-                <select id="state" name="state">
-                    <option value="Nevada">Nevada</option>
-                    <option value="California">California</option>
-                </select>
+          <label for="city">City</label>
+          <input type="text" id="city" name="user-city">
 
-                <label for="zipcode">Zip Code</label>
-                <!-- fix this -->
-                <!-- fix this -->
-                <!-- fix this -->
-                <!-- fix this -->
-                <!-- fix this -->
-                <input type="text" id="zipcode" name="user-zip" pattern="[0-9*]">
+          <!-- Dropdown selection -->
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <optgroup label="United States">
+              <option value="select">-- Choose State --</option>
+              <option value="nevada">Nevada</option>
+              <option value="california">California</option>
+            </optgroup>
+          </select>
 
-            </fieldset>
-            <hr>
-            <!-- Newsletter section -->
-            <fieldset class="newsletter">
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="user-zip" pattern="[0-9]{5}">
+          <!-- zip pattern says use only 0-9, and 5 digits long -->
+        </fieldset>
 
-                <legend><h2>Newsletter</h2></legend>
+        <hr>
 
-                <p>Selecet the newsletters you would like to receive</p>
+        <!-- Newsletter section -->
+        <fieldset class="newsletter">
 
-                <!-- Checkboxes -->
-                <ul>
-                  <li>
-                    <input type="checkbox" id="html-news" value="html" name="newsletters">
-                    <label for="html-news">HTML News</label>
-                  </li>
-                
-                  <li>
-                    <input type="checkbox" id="css-news" value="css" name="newsletters">
-                    <label for="css-news">CSS News</label>
-                  </li>
-                    
-                  <li>
-                    <input type="checkbox" id="javascript-news" value="javascript" name="newsletters">
-                    <label for="javascript-news">Javascript News</label>
-                  </li>
-                </ul>
+          <legend><h2>Newsletter</h2></legend>
 
-                <h3>Newsletter format</h3>
+          <p>Select the newsletters you would like to receive</p>
 
-                <!-- Radio buttons -->
-                <ul>
-                  <li>
-                    <input type="radio" id="html-radio" value="html" name="format">
-                    <label for="html-radio">HTML</label>
-                  </li>
+          <!-- Checkboxes -->
+          <ul class="checkboxes">
+            <li>
+              <input type="checkbox" id="html-news" value="html" name="newsletters">
+              <label for="html-news">HTML News</label>
+            </li>
+          
+            <li>
+              <input type="checkbox" id="css-news" value="css" name="newsletters">
+              <label for="css-news">CSS News</label>
+            </li>
+              
+            <li>
+              <input type="checkbox" id="javascript-news" value="javascript" name="newsletters">
+              <label for="javascript-news">Javascript News</label>
+            </li>
+          </ul>
 
-                  <li>
-                    <input type="radio" id="plain-radio" value="plain" name="format"> 
-                    <label for="plain-radio">Plain text</label>
-                  </li>
-                </ul>
+          <h3>Newsletter format</h3>
 
-            </fieldset>
-            <!-- Text Area -->
-            <p>Other topics you'd like to hear about</p>
+          <!-- Radio buttons -->
+          <ul class="radio-buttons">
+            <li>
+              <input type="radio" id="html-radio" value="html" name="format">
+              <label for="html-radio">HTML</label>
+            </li>
 
-            <input type="textarea" id="topics-input" name="topics">
+            <li>
+              <input type="radio" id="plain-radio" value="plain" name="format"> 
+              <label for="plain-radio">Plain text</label>
+            </li>
+          </ul>
 
-            <!-- Submit Button -->
-            <input type="submit" value="Sign Up" id="submit" name="submit-button">
-            
-          </form>
-      </main>
-    </div>
+        </fieldset>
+        <!-- Text Area -->
+        <p>Other topics you'd like to hear about</p>
 
-    <footer>
-        <p>Copyright The Code Review</p>
-    </footer>
+        <textarea id="topics-input" name="topics"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Sign Up" id="submit" name="submit-button">     
+      </form>
+    </main>
+  </div>
+
+  <footer>
+      <p>Copyright The Code Review</p>
+  </footer>
 
 </body>
 </html>
