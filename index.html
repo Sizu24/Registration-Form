@@ -20,6 +20,7 @@
     </header>
 
     <main>
+       
       <form action="index.html" method="post">
         <hr>
         <!-- Contact Section -->
@@ -27,16 +28,16 @@
           <legend><h2>Contact Information</h2></legend>
 
           <label for="username">Full Name</label>
-          <input type="name" id="username" name="username" placeholder="Required">
+          <input type="name" id="username" name="username" placeholder="Required" required>
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="user-email" placeholder="Required">
+          <input type="email" id="email" name="user-email" placeholder="Required" required>
 
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="user-phone">
+          <input type="tel" id="phone" name="user-phone" placeholder="Enter 7 digit phone number">
 
           <label for="address">Street Address</label>
-          <input type="text" id="address" name="user-address">
+          <input type="text" id="address" name="user-address" placeholder="Number, street name, unit/apt">
 
           <label for="city">City</label>
           <input type="text" id="city" name="user-city">
@@ -101,7 +102,7 @@
           </select>
 
           <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="user-zip" pattern="[0-9]{5}">
+          <input type="text" id="zipcode" name="user-zip" pattern="[0-9]{5}" placeholder="Enter 5 digit zip">
           <!-- zip pattern says use only 0-9, and 5 digits long -->
         </fieldset>
 
@@ -109,7 +110,6 @@
 
         <!-- Newsletter section -->
         <fieldset class="newsletter">
-
           <legend><h2>Newsletter</h2></legend>
 
           <p>Select the newsletters you would like to receive</p>
@@ -149,13 +149,14 @@
 
         </fieldset>
         <!-- Text Area -->
-        <p>Other topics you'd like to hear about</p>
-
+        <label for="topics-input"><p>Other topics you'd like to hear about</p></label>
         <textarea id="topics-input" name="topics"></textarea>
 
         <!-- Submit Button -->
         <input type="submit" value="Sign Up" id="submit" name="submit-button">     
+      
       </form>
+    
     </main>
   </div>
 
