@@ -211,11 +211,17 @@ input[type="checkbox"]:checked + label{
 
 .contact input:focus, textarea:focus{
 	background: rgb(243, 253, 255);
+	transition: background 1.2s;
 }
 
 label[for*="topics-input"]{
 	display: inline-block;
 	margin: 1.5em 0;
+}
+
+input[type="submit"]:hover{
+	background: rgb(102, 199, 255);
+	transition: background 0.5s;
 }
 
 /* Bigger screen size styles */
