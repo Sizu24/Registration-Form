@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Form Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 </head>
@@ -25,16 +26,16 @@
         <hr>
         <!-- Contact Section -->
         <fieldset class="contact">
-          <legend><h2>Contact Information</h2></legend>
+          <legend>Contact Information</legend>
 
           <label for="username">Full Name</label>
-          <input type="name" id="username" name="username" placeholder="Required" required>
+          <input type="text" id="username" name="username" placeholder="Required" required>
 
           <label for="email">Email Address</label>
           <input type="email" id="email" name="user-email" placeholder="Required" required>
 
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="user-phone" placeholder="Enter 7 digit phone number">
+          <input type="tel" id="phone" name="user-phone" maxLength="10" pattern="[0-9]" placeholder="Enter 10-digit phone number">
 
           <label for="address">Street Address</label>
           <input type="text" id="address" name="user-address" placeholder="Number, street name, unit/apt">
@@ -102,7 +103,7 @@
           </select>
 
           <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="user-zip" pattern="[0-9]{5}" placeholder="Enter 5 digit zip">
+          <input type="text" id="zipcode" name="user-zip" maxLength="5" pattern="[0-9]{5}" placeholder="Enter 5-digit zip">
           <!-- zip pattern says use only 0-9, and 5 digits long -->
         </fieldset>
 
@@ -110,7 +111,7 @@
 
         <!-- Newsletter section -->
         <fieldset class="newsletter">
-          <legend><h2>Newsletter</h2></legend>
+          <legend>Newsletter</legend>
 
           <p>Select the newsletters you would like to receive</p>
 
@@ -149,7 +150,7 @@
 
         </fieldset>
         <!-- Text Area -->
-        <label for="topics-input"><p>Other topics you'd like to hear about</p></label>
+        <label for="topics-input">Other topics you'd like to hear about</label>
         <textarea id="topics-input" name="topics"></textarea>
 
         <!-- Submit Button -->
