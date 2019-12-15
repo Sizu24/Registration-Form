@@ -131,6 +131,7 @@ footer {
 
 .contact {
 	display: flex;
+	flex-direction: column;
 }
 
 .newsletter {
@@ -171,6 +172,7 @@ footer {
 	margin: 0 0 20px 0;
 	width: 100%;
 	font-size: 1rem;
+	line-height: 1.8;
 }
 
 .contact input:focus{
@@ -189,6 +191,7 @@ input[type="submit"]{
 	font-size: 1.1em;
 	font-weight: 900;
 	color: white;
+	border: none;
 }
 
 input::placeholder {
