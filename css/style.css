@@ -46,8 +46,8 @@ p, h3{
 }
 
 h2 {
-	margin-top: 50px;
-	font-size: 1.8rem;
+	margin-top: 30px;
+	font-size: 1.2rem;
 }
 
 
@@ -224,6 +224,11 @@ label[for*="topics-input"]{
 	.wrapper {
 		max-width: 720px;
 		margin: 0 auto;
+	}
+	h2 {
+		margin-top: 50px;
+		font-size: 1.7rem;
+		font-weight: 900;
 	}
 	.contact {
 		display: inline-block;
