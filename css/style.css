@@ -3,6 +3,7 @@
 body {
 	margin: 0 auto;
 	font-family: 'Merriweather', serif;
+
 }
 
 nav {
@@ -50,11 +51,13 @@ h2 {
 	font-size: 1.2rem;
 }
 
-
 .contact legend {
-	font-size: 1.1rem;
-	font-weight: bold;
-	padding: 30px 0;
+	position: relative;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	top: 30px;
+	color: white;
+	font-weight: 900;
 }
 
 .newsletter legend {
@@ -67,7 +70,7 @@ h2 {
 	top: 20px;
 	margin-bottom: 20px;
 	margin-top: 0;
-	padding: 15px 10px;
+	padding: 15px 15px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -93,11 +96,13 @@ li{
 }
 
 label {
-	color: rgb(153, 153, 153);
+	color: rgb(146, 146, 146);
 	margin-bottom: 10px;
 	font-size: 0.9em;
 }
-
+.contact label {
+	color: rgb(238, 238, 238);
+}
 select {
 	height: 53px;
 }
@@ -127,12 +132,19 @@ footer {
 	margin: 0 4%;
 	max-width: 1024px;
 
+
 }
 
 .contact {
 	display: flex;
 	flex-direction: column;
+	background: rgb(146, 174, 185);
+	padding: 50px 20px 0 20px;
+	border-radius: 5px;
+	max-width: 768px;
+	margin-bottom: 30px;
 }
+
 
 .newsletter {
 	background: #d5dde0;
@@ -178,7 +190,7 @@ footer {
 .contact input:focus{
 	/* 2px less than previous padding to avoid adding
 	pixels and moving labels on focus */
-	border: 2px solid blue;
+	border: 2px solid rgb(95, 204, 255);
 	padding: 13px 0 13px 10px;
 }
 
@@ -213,7 +225,7 @@ input[type="checkbox"]:checked + label{
 }
 
 .contact input:focus, textarea:focus{
-	background: rgb(243, 253, 255);
+	background: rgb(190, 233, 247);
 	transition: background 1.2s;
 }
 
@@ -231,7 +243,7 @@ input[type="submit"]:hover{
 @media screen and (min-width: 768px){
 
 	.wrapper {
-		max-width: 720px;
+		max-width: 768px;
 		margin: 0 auto;
 	}
 	h2 {
@@ -241,7 +253,6 @@ input[type="submit"]:hover{
 	}
 	.contact {
 		display: inline-block;
-		width: 100%;
 	}
 
 	.contact input:nth-child(2n+3), select {
@@ -253,7 +264,7 @@ input[type="submit"]:hover{
 
 	.contact label {
 		text-align: left;
-		padding: 30px 0px 30px 0;
+		padding: 40px 0px 20px 0;
 		float: left;
 		/* width: 17%; */
 		width: 20%;
