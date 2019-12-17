@@ -256,7 +256,6 @@ input[type="submit"]:hover{
 	}
 
 	.contact input:nth-child(2n+3), select {
-		/* width: 78%; */
 		margin: 20px 0;
 		width: 80%;
 
@@ -266,7 +265,6 @@ input[type="submit"]:hover{
 		text-align: left;
 		padding: 40px 0px 20px 0;
 		float: left;
-		/* width: 17%; */
 		width: 20%;
 	}
 
